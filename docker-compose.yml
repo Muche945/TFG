@@ -16,7 +16,7 @@ services:
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     volumes:
-      - ./guacamole_db_init/initdb.sql:/docker-entrypoint-initdb.d/initdb.sql
+      - ./guacamole_db_inicializar/initdb.sql:/docker-entrypoint-initdb.d/initdb.sql
       - db_data:/var/lib/mysql
 
   guacamole:
